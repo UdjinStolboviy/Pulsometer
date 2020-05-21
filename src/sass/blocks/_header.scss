@@ -1,0 +1,38 @@
+.BlockHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-ElemLogo {
+        width: 250px;
+        img {
+            width: 100%;
+        }
+    }
+    &-ElemOfficial {
+        font-size: 12px;
+        color: $text-color;
+        font-weight: 500;
+        text-align: center;
+        span {
+            display: block;
+            font-size: 18px;
+        }
+        
+    }
+    &-ElemPhone {
+        display: block;
+        font-size: 18px;
+        color: $text-color;
+        line-height: 1.2;
+        text-align: right;
+        &:hover {
+            color: $text-color;
+            text-decoration: none;
+        }
+    }
+    &-ElemContacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
