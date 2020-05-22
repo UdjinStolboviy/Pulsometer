@@ -2,4 +2,60 @@
     min-height: 650px;
     padding: 21px 0 93px 0;
     background: url(../img/gorun.png) center (center/cover) no-repeat;
+    &-ElemWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+    &-ElemHeader {    
+        font-size: 42px;
+        color: $text-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: right;
+        text-transform: uppercase;
+    }
+    &-ElemSubheader {    
+        margin-top: 17px;
+        font-size: 24px;
+        color: $text-color;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: right;
+    }
+    &-ElemIcons{
+        margin-top: 65px;
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-ElemIcon{
+        width: 106px;
+        text-align: center;        
+        font-size: 14px;
+        color: $text-color;
+        line-height: 1.2;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+    &-ElmeLink {
+        margin-top: 18px;
+        font-size: 16px;
+        color: $text-color;
+        line-height: 1.2;
+        text-align: right;
+        font-weight: 500;
+        a {
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: $text-color;
+        }
+    }
+
 }

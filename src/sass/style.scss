@@ -1,8 +1,8 @@
 
-@import "base/variables";
+
 // @import "base/mixins";
 // @import "general";
-// @import "base/media";
+
 
 * {
 	font-family: 'Museo Sans Cyrl',sans-serif;
@@ -17,3 +17,7 @@
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
+@import 'blocks/adantages';
+
+@import "base/variables";
+@import 'base/media';

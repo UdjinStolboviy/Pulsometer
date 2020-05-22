@@ -1,4 +1,26 @@
-@media (max-width: 1200px){};
-@media (max-width: 991px){};
-@media (max-width: 767px){};
-@media (max-width: 575px){};
+// @media (max-width: 1200px){};
+@media (max-width: 991px) {
+    .BlockHeader {
+        margin: 0 40px;
+    }
+    .BlockPromo-ElemWrapper {
+        margin-right: 50px;
+    }
+
+    .BlockAdantages {
+        &-ElemIcons {
+            flex-direction: column;
+        }       
+    }
+    
+}
+// @media (max-width: 767px){};
+@media (max-width: 575px){
+    .BlockHeader-ElemOfficial {
+        display: none;
+    }
+    .BlockPromo-ElemWrapper {
+        margin-left: 20px;
+        align-items: center;
+    }
+};

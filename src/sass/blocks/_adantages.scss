@@ -1,0 +1,51 @@
+.BlockAdantages {
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+    min-height: 470px;
+    &-ElemHeader {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            display: block;
+            padding-top: 60px;                
+            font-size: 30px;
+            font-weight: 700;
+            color: rgb(13, 13, 13);
+            line-height: 1.2;
+            text-align: center;  
+        }    
+    }
+    &-ElemIcons {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+    &-ElemIcon {
+        padding: 0 30px;
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            min-height: 65px;
+        }
+        h2 {          
+            font-size: 18px;
+            font-weight: 600;
+            color: rgb(13, 13, 13);
+            line-height: 1.2;
+            text-align: center;
+        }
+        p  {
+            width: 280px;
+            margin-top: 25px;
+            font-size: 14px;
+            font-weight: 300;
+            color: rgb(13, 13, 13);
+            line-height: 1.2;
+            text-align: center;
+        }
+        a {
+            color: $main-color;
+        }
+    }
+}
