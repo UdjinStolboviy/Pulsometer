@@ -10,11 +10,17 @@
     .BlockAdantages {
         &-ElemIcons {
             flex-direction: column;
-        }       
+        }
     }
-    
+    .BlockContainer {
+        padding-left: 50px;
+    }
 }
-// @media (max-width: 767px){};
+// @media (max-width: 767px){
+//     .BlockContainer {
+//         padding-left: 50px;
+//     }
+// };
 @media (max-width: 575px){
     .BlockHeader-ElemOfficial {
         display: none;

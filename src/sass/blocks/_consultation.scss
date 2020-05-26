@@ -1,0 +1,27 @@
+.BlockConsultation {
+        min-height: 680px;
+        padding: 100px 0 92px 0;
+        background: url(../img/bgsuport.png) center (center/cover) no-repeat;
+        &-ElemDescr {
+                        font-size: 20px;
+                        margin-top: 80px;
+                        color: rgb(255, 255, 255);
+                        line-height: 1.2;
+                        font-weight: 500;
+        }
+}
+
+.BlockTitle {
+        font-size: 30px;
+        font-weight: 700;
+        color: #0d0d0d;
+        text-align: center;
+        text-transform: uppercase;
+        &-ElemLeft {
+                font-size: 36px;
+                font-weight: 700;
+                color: $text-color;
+                text-transform: uppercase;
+                text-align: left;
+        }
+}

@@ -5,7 +5,7 @@
     &-ElemHeader {
         display: flex;
         flex-direction: column;
-        h2 {
+        &_modTitle {
             display: block;
             padding-top: 60px;                
             font-size: 30px;
