@@ -1,0 +1,30 @@
+.BlockCatalog {
+    padding-bottom: 81px;
+    &-ElemTabs {
+        margin-top: 70px ;
+        list-style-type: none;
+        padding: 0 130px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &-ElemTab {
+        width: 220px;
+        height: 50px;
+        border: 2px solid #d0d0d0;
+        color: #6b6b6b;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 48px;
+        transform: skewX(-25deg);
+        margin: 0 5px;
+        div {
+            transform: skewX(25deg);
+        }
+        &_modActive {
+            color: $text-color;
+            background-color: $main-color;
+        }
+     }
+}
