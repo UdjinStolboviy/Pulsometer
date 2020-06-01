@@ -6,6 +6,8 @@
         padding: 0 130px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 0;
+        // padding-left: 0;
     }
     &-ElemTab {
         width: 220px;
@@ -19,12 +21,84 @@
         line-height: 48px;
         transform: skewX(-25deg);
         margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
         div {
             transform: skewX(25deg);
         }
         &_modActive {
             color: $text-color;
             background-color: $main-color;
+            border: none;
         }
-     }
+    }
+    &-ElemContent {
+        margin-top: 60px;
+    }
+.BlockItem {
+        border-width: 2px;
+        border-color: rgb(232, 232, 232);
+        border-style: solid;
+        width: 296px;
+        min-height: 436px;
+        padding: 20px 20px 26px 20px;
+        &-ElemImg {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: 200px;
+        }
+        &-ElemSubtitle {
+            margin-top: 20px;
+            font-size: 16px;
+            color: rgb(13, 13, 13);
+            font-weight: 700;
+            text-align: center;
+        }
+        &-ElemDescr {
+            margin-top: 16px;
+            font-size: 14px;
+            color: rgb(13, 13, 13);
+            font-weight: 300;
+            text-align: center;
+        }
+        &-ElemLink {
+                display: block;
+                margin-top: 17px;
+                font-size: 14px;
+                font-weight: 400;
+                color: $main-color;
+                text-decoration: underline;
+                text-align: center;
+                &:hover {
+                    color: $main-color;
+                }
+        }
+        hr {
+            background-color: rgb(232, 232, 232);
+            margin-top: 19px;
+            margin-bottom: 21px;
+            border-botton: none;
+        }
+        &-ElemFooter {
+            display: grid;
+            grid-template-columns: 1fr  1fr;
+        }
+        &-ElemOldPrice {
+                font-size: 14px;
+                font-weight: 300;
+                color: rgb(85, 85, 85);
+                text-decoration: line-through;
+        }
+        &-ElemPrice {
+                font-size: 20px;
+                font-weight: 700;
+                color: rgb(5, 5, 5);
+        }
+    }
 }
+
