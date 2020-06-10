@@ -24,7 +24,7 @@
                 </div>
                 <div class="BlockHeader-ElemContacts">
                     <a href="tel:+84999228974 " class="BlockHeader-ElemPhone">+8 (499) 922-89-74</a>
-                    <button class="BlockButton">заказать звонок</button>
+                    <button data-modal="consultation" class="BlockButton">заказать звонок</button>
                 </div>
             </header>
             <div class="BlockPromo-ElemWrapper">
@@ -157,7 +157,7 @@
                         <div class="BlockItem-ElemContent BlockItem-ElemContent_modActive">
                             <!-- BlockItem-ElemContent_modActive -->
                             <img src="img/Pulsometr.png" alt="Pulsometr" class="BlockItem-ElemImg">
-                            <div class="BlockItem-ElemSubtitle">Пульсометр Polar FT1 </div>
+                            <div class="BlockItem-ElemSubtitle">Пульсометр Suunto M2 </div>
                             <div class="BlockItem-ElemDescr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="BlockItem-ElemLink">ПОДРОБНЕЕ</a>
                         </div>
@@ -176,7 +176,7 @@
                     <div class="BlockItem-ElemFooter">
                         <div class="BlockItem-ElemPrices">
                             <div class="BlockItem-ElemOldPrice">4 750 руб.</div>
-                            <div class="BlockItem-ElemPrice">4 500 руб.</div>
+                            <div class="BlockItem-ElemPrice">6 641 руб.</div>
                         </div>
                         <button class="BlockButton BlockButton_modButtonMini">КУПИТЬ</button>
                     </div>
@@ -455,6 +455,42 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultion">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="BlockFeed-form BlockFeed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="email" required placeholder="Ваш e-mail" type="email">
+            
+                <!-- <input type="submit" value="Заказать Консультацию"> -->
+                <button class="BlockButton BlockButton_modSubmit">Заказать Консультацию</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="BlockFeed-form BlockFeed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="email" required placeholder="Ваш e-mail" type="email">
+        
+                <!-- <input type="submit" value="Заказать Консультацию"> -->
+                <button class="BlockButton BlockButton_modSubmit">Купить</button>
+            </form>
+        </div>
+
+        <div class="modal" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
 
 
 

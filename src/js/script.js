@@ -48,5 +48,22 @@ $(document).ready(function () {
     toggleSlide('.BlockItem-ElemLink');
     toggleSlide('.BlockItem-ElemBack');
 
+    // Modal
+
+    $('[data-modal=consultation]').on('click', function () {
+        $('.overlay, #consultion').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function () {
+        $('.overlay,#consultation,#thanks,#order').fadeOut('slow')
+    });
+    // $('.BlockButton_modButtonMini').on('click', function () {
+    //     $('.overlay, #order').fadeIn('slow');
+    // });
+    $('.BlockButton_modButtonMini').each(function (i) {
+        $(this).on('click', function () {
+            $('#order .modal__descr').text($('.BlockItem-ElemSubtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
+    })
 
 });
