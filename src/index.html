@@ -44,7 +44,7 @@
                         Ответим на все вопросы
                     </div>
                 </div>
-                <button class="BlockButton BlockButton_modMain">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="BlockButton BlockButton_modMain">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="BlockPromo-ElmeLink">
                     или 
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -89,7 +89,7 @@
             <div class="BlockConsultation-ElemDescr">
                 Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="BlockFeed-form" action="#">
+            <form id="consultation-form" class="BlockFeed-form" action="#">
                     <input name ="name" required placeholder="Ваше имя" type="text">
                     <input name ="phone" required placeholder="Ваш телефон" type="number">
                     <input name ="email" required placeholder="Ваш e-mail" type="email">
@@ -462,9 +462,9 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="BlockFeed-form BlockFeed-form_mt25" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш e-mail" type="email">
+                <input name="name"  placeholder="Ваше имя" type="text">
+                <input name="phone"  placeholder="Ваш телефон" type="number">
+                <input name="email"  placeholder="Ваш e-mail" type="email">
             
                 <!-- <input type="submit" value="Заказать Консультацию"> -->
                 <button class="BlockButton BlockButton_modSubmit">Заказать Консультацию</button>
@@ -497,6 +497,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 

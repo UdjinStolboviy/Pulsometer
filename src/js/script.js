@@ -64,6 +64,64 @@ $(document).ready(function () {
             $('#order .modal__descr').text($('.BlockItem-ElemSubtitle').eq(i).text());
             $('.overlay, #order').fadeIn('slow');
         })
-    })
+    });
+
+    // $('#consultation-form').validate();
+    // $('#consultion form').validate({
+    //     rules: {
+    //          name: {
+    //              required: true,
+    //              minlength: 2
+    //          },
+    //         phone: "required",
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: {
+    //             required: "Пожалуйста, ведите имя",
+    //             minlength: jQuery.validator.format("Введите {0} символа!")
+    //         },
+    //         phone: "Пожалуйста  ведите  свой номер тел.",
+    //         email: {
+    //             required: "Пожалуста ведите свою електроную почту",
+    //             email: "name@domain.com"
+    //         }
+    //     }
+    // });
+    // $('#order form').validate();
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, ведите имя",
+                    minlength: jQuery.validator.format("Введите {0} символа!")
+                },
+                phone: "Пожалуйста  ведите  свой номер тел.",
+                email: {
+                    required: "Пожалуста ведите свою електроную почту",
+                    email: "name@domain.com"
+                }
+            }
+        });
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultion form');
+    validateForms('#order form');
 
 });
