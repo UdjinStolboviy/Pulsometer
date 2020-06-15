@@ -9,7 +9,7 @@ $(document).ready(function () {
                   breakpoint: 982,
                   settings: {
                       arrows: false,
-                      dots: true
+                      dots: true,
                   }
               },
         ]
@@ -123,5 +123,23 @@ $(document).ready(function () {
     validateForms('#consultation-form');
     validateForms('#consultion form');
     validateForms('#order form');
+
+    $('input[name=phone]').mask("+38 (999) 999-99-99");
+
+    $('form').submit(function (e) {
+        e.preventDefault(); //позволят отменить стандартное  поведения  браузера  чтоб не  перерезагружалась страница.
+        $.ajax({
+            type: "POST", // отдаю на  сервер даные 
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();//закриваеться окошко формы 
+            $('.overlay, #thanks').fadeIn('slow');//открываеться окошко спасибо за закоз.
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 
 });
